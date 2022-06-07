@@ -1,0 +1,28 @@
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    background: #aaa;
+    position: relative;
+    left: 200px;
+    display:inline-block;
+}
+
+.circulo {
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid blue;
+    position: absolute;
+    right:0;
+    top:0;
+}
