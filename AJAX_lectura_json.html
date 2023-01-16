@@ -32,9 +32,9 @@ function loadDoc() {
     if (this.readyState == 4 && this.status == 200) {
      const myObj = JSON.parse(this.responseText);
   let text = "<table border='1'>";
-  text += "<tr><th>NAME</th><th>AGE</th><th>SECRET IDENTITY</th></tr>";
+  text += "<tr><th>NOME</th><th>PUNTOS</th></tr>";
   for (let x in myObj.members) {
-     text += "<tr><td>" + myObj.members[x].name + "</td><td>" + myObj.members[x].nome + "</td><td>" + myObj.members[x].puntos + "</td></tr>";
+     text += "<tr><td>" + myObj.members[x].nome + "</td><td>"  + myObj.members[x].puntos + "</td></tr>";
    };
   text += "</table>";  
   document.getElementById("demo").innerHTML = text;
