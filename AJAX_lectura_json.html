@@ -33,8 +33,8 @@ function loadDoc() {
      const myObj = JSON.parse(this.responseText);
   let text = "<table border='1'>";
   text += "<tr><th>NOME</th><th>PUNTOS</th></tr>";
-  for (let x in myObj) {
-     text += "<tr><td>" + myObj.nome + "</td><td>"  + myObj.puntos + "</td></tr>";
+  for (let x in myObj.equipos) {
+     text += "<tr><td>" + myObj.equipos[x].nome + "</td><td>"  + myObj.equipos[x].puntos + "</td></tr>";
    };
   text += "</table>";  
   document.getElementById("demo").innerHTML = text;
@@ -45,7 +45,7 @@ function loadDoc() {
 
 </script>
 
-<p>Puedes ver el fichero JSON aqui: <a href="JSONs/data.json" target="_blank">json_superheroes.json</a></p>
+<p>Puedes ver el fichero JSON aqui: <a href="JSONs/data.json" target="_blank">data.json</a></p>
 
 </body>
 </html>
