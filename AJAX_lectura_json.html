@@ -11,7 +11,7 @@ th,td {
 }
 </style>
 
-<body onload="loadDoc()">
+<body >
 
 <h2>Usa el objeto XMLHttpRequest para acceder al fichero JSON del servidor.</h2>
 <p>El fichero esta en formato JSON, y su contenido se convierte en objetos JavaScript.</p>
@@ -21,7 +21,8 @@ th,td {
 <table id="demo"></table>
 
 <script>
-
+const p = document.getElementById("body"); // Encuentra el elemento de párrafo en la página a través de su id "foo"
+  p.onclick = loadDoc; // Agrega la función onclick al elemento
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
 
