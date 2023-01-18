@@ -11,7 +11,7 @@ th,td {
 }
 </style>
 
-<body>
+<body onload="loadDoc()">
 
 <h2>Usa el objeto XMLHttpRequest para acceder al fichero JSON del servidor.</h2>
 <p>El fichero esta en formato JSON, y su contenido se convierte en objetos JavaScript.</p>
@@ -21,7 +21,7 @@ th,td {
 <table id="demo"></table>
 
 <script>
-onreadystatechange.loadDoc();
+
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
 
