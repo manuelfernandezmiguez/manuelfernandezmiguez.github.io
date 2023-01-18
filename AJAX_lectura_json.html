@@ -16,12 +16,12 @@ th,td {
 <h2>Usa el objeto XMLHttpRequest para acceder al fichero JSON del servidor.</h2>
 <p>El fichero esta en formato JSON, y su contenido se convierte en objetos JavaScript.</p>
 
-<button type="button" onclick="loadDoc()">Mostrar los datos del fichero JSON</button>
-<br><br>
+
 
 <table id="demo"></table>
 
 <script>
+onreadystatechange.loadDoc();
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
 
