@@ -22,7 +22,7 @@ th,td {
 
 <script>
 const p = document.getElementById("body"); // Encuentra el elemento de párrafo en la página a través de su id "foo"
-  p.onclick = loadDoc; // Agrega la función onclick al elemento
+  p.onreadystatechange = loadDoc; // Agrega la función onclick al elemento
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
 
