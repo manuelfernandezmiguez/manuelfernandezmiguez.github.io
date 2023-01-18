@@ -33,6 +33,7 @@ function loadDoc() {
      const myObj = JSON.parse(this.responseText);
   let text = "<table border='1'>";
   text += "<tr><th>NOME</th><th>PUNTOS</th></tr>";
+  let i=0;
   for (i=0; i < myObj.length; i++) {
      text += "<tr><td>" + myObj[i].nome + "</td><td>"  + myObj[i].puntos + "</td></tr>";
    };
